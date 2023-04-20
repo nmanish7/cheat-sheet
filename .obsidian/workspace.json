@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "386ee171e7bf0d4d",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6ea8532512ab4af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3adae898ad29ff85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cheat-sheets-main/linux/awk.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4d9911637dbd2a9a",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe291ba9fb44305d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5ed386da207ba28",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "16e70bae954e0bb1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a9d15a704dfbd65b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5bee8906e22f88ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc594fdf0a3b64a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3927179de0cf7eb4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "cheat-sheets-main/linux/awk.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4dcd1fe8ee0885e2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "cheat-sheets-main/linux/awk.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dcec4ee448da939c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "aefdbc2a9c2418a3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "cheat-sheets-main/linux/awk.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3adae898ad29ff85",
+  "lastOpenFiles": [
+    "cheat-sheets-main/linux/cron.md",
+    "cheat-sheets-main/linux/grep.md",
+    "references/Reverse Shell.md",
+    "(GitHub.md",
+    "cheat-sheets-main/kali-linux.md",
+    "cheat-sheets-main/README.md",
+    "references",
+    "cheat-sheets-main/databases/postgres.md",
+    "cheat-sheets-main/databases/mariadb.md",
+    "cheat-sheets-main/databases/mysql.md",
+    "cheat-sheets-main/windows/windows-updates.md",
+    "cheat-sheets-main/windows/powershell-remote.md",
+    "cheat-sheets-main/windows/certutil.md",
+    "cheat-sheets-main/tools/wsl.md",
+    "cheat-sheets-main/tools/vscode.md",
+    "cheat-sheets-main/tools/vagrant.md",
+    "cheat-sheets-main/tools/openssl.md",
+    "cheat-sheets-main/tools/datree.md",
+    "cheat-sheets-main/linux/awk.md",
+    "cheat-sheets-main/linux/linux.md",
+    "cheat-sheets-main/linux/iptables.md",
+    "cheat-sheets-main/linux/linuxbasics.md",
+    "cheat-sheets-main/infra/proxmox.md",
+    "cheat-sheets-main/infra/proxmox-certificate-management.md",
+    "cheat-sheets-main/docker/docker.md",
+    "cheat-sheets-main/docker/docker-networking.md",
+    "cheat-sheets-main/docker/docker-file.md",
+    "cheat-sheets-main/windows",
+    "cheat-sheets-main/tools",
+    "cheat-sheets-main/networking",
+    "cheat-sheets-main/misc",
+    "cheat-sheets-main/macos",
+    "cheat-sheets-main/linux/distros",
+    "cheat-sheets-main/linux",
+    "cheat-sheets-main/kubernetes",
+    "cheat-sheets-main/infra"
+  ]
+}
