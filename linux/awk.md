@@ -1,5 +1,5 @@
 # AWK
-AWK (awk) is a domain-specific language designed for text processing and typically used as a data extraction and reporting tool. Similar to the **[Sed](sed)** and **[Grep](grep)** commands, it is a filter, and is a standard feature of most Unix-like operating systems, like **[Linux](linux)**.
+AWK (awk) is a domain-specific language designed for text processing and typically used as a data extraction and reporting tool. Similar to the **[Sed](sed.md)** and **[Grep](grep%20regular%20expression.md)** commands, it is a filter, and is a standard feature of most Unix-like operating systems, like **[Linux](linux.md)**.
 
 ## Awk Cheat Sheet
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b6ea8532512ab4af",
+        "id": "39290a38419736d6",
         "type": "tabs",
         "children": [
           {
-            "id": "3adae898ad29ff85",
+            "id": "266b325658bc1fd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cheat-sheets-main/linux/awk.md",
+                "file": "cheat-sheets-main/markdown.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cheat-sheets-main/linux/awk.md",
+                "file": "cheat-sheets-main/markdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cheat-sheets-main/linux/awk.md",
+                "file": "cheat-sheets-main/markdown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,15 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cheat-sheets-main/linux/awk.md"
+                "file": "cheat-sheets-main/markdown.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -143,46 +144,50 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-metatable:Metatable": false
     }
   },
-  "active": "3adae898ad29ff85",
+  "active": "266b325658bc1fd1",
   "lastOpenFiles": [
-    "cheat-sheets-main/linux/cron.md",
-    "cheat-sheets-main/linux/grep.md",
-    "references/Reverse Shell.md",
-    "(GitHub.md",
+    "Practice Canvas.canvas",
+    "linux/grep regular expression.md",
+    "linux/data/grep cheatsheet.png",
+    "linux/data/grep cheatsheet.png.crdownload",
+    "linux/data/Assignment GREP Regular Expression.pdf",
+    "linux/data/Sample-1.txt",
+    "linux/data/Sample-2.txt",
+    "linux/data/LA_LabAssignment-2.pdf",
+    "linux/data",
+    "linux/New folder",
+    "linux/grep.md",
+    "linux/bash globbing.md",
+    "Untitled 1.md",
+    "linux/distros/fedora.md",
+    "cheat-sheets-main/mark.md",
+    "cheat-sheets-main/markdown.md",
+    "2023-04-24.md",
+    "Untitled 2.canvas",
+    "linux/awk.md",
+    "linux/linuxbasics.md",
+    "linux/distros/centos.md",
+    "Untitled 1.canvas",
+    "linux/sed.md",
+    "linux/CUT/unicode.yml",
+    "linux/CUT/fruits2.txt",
+    "linux/CUT/fruits1.txt",
+    "linux/cron.md",
+    "linux/mount.md",
+    "linux/nfs.md",
+    "linux/ufw.md",
+    "linux/user.md",
+    "linux/linux.md",
+    "linux/iptables.md",
+    "linux/environment-variables-in-linux.md",
+    "linux/distros/ubuntu.md",
+    "linux/distros/debian.md",
     "cheat-sheets-main/kali-linux.md",
-    "cheat-sheets-main/README.md",
-    "references",
-    "cheat-sheets-main/databases/postgres.md",
-    "cheat-sheets-main/databases/mariadb.md",
-    "cheat-sheets-main/databases/mysql.md",
-    "cheat-sheets-main/windows/windows-updates.md",
-    "cheat-sheets-main/windows/powershell-remote.md",
-    "cheat-sheets-main/windows/certutil.md",
-    "cheat-sheets-main/tools/wsl.md",
     "cheat-sheets-main/tools/vscode.md",
-    "cheat-sheets-main/tools/vagrant.md",
-    "cheat-sheets-main/tools/openssl.md",
-    "cheat-sheets-main/tools/datree.md",
-    "cheat-sheets-main/linux/awk.md",
-    "cheat-sheets-main/linux/linux.md",
-    "cheat-sheets-main/linux/iptables.md",
-    "cheat-sheets-main/linux/linuxbasics.md",
-    "cheat-sheets-main/infra/proxmox.md",
-    "cheat-sheets-main/infra/proxmox-certificate-management.md",
-    "cheat-sheets-main/docker/docker.md",
-    "cheat-sheets-main/docker/docker-networking.md",
-    "cheat-sheets-main/docker/docker-file.md",
-    "cheat-sheets-main/windows",
-    "cheat-sheets-main/tools",
-    "cheat-sheets-main/networking",
-    "cheat-sheets-main/misc",
-    "cheat-sheets-main/macos",
-    "cheat-sheets-main/linux/distros",
-    "cheat-sheets-main/linux",
-    "cheat-sheets-main/kubernetes",
-    "cheat-sheets-main/infra"
+    "cheat-sheets-main/tools/starship.md"
   ]
 }

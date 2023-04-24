@@ -7,7 +7,7 @@ Project Homepage: https://www.isc.org/bind/
 ---
 ## Installation
 
-ISC provides executables for Windows and packages for [Ubuntu](linux/distros/ubuntu.md), [CentOS](linux/distros/centos.md), [Fedora](linux/distros/fedora.md)  and [Debian](linux/distros/debian.md) - BIND 9 ESV, Debian - BIND 9 Stable, Debian - BIND 9 Development version. Most operating systems also offer BIND 9 packages for their users. These may be built with a different set of defaults than the standard BIND 9 distribution, and some of them add a version number of their own that does not map exactly to the BIND 9 version.
+ISC provides executables for Windows and packages for [Ubuntu](ubuntu.md), [CentOS](centos.md), [Fedora](fedora.md)  and [Debian](debian.md) - BIND 9 ESV, Debian - BIND 9 Stable, Debian - BIND 9 Development version. Most operating systems also offer BIND 9 packages for their users. These may be built with a different set of defaults than the standard BIND 9 distribution, and some of them add a version number of their own that does not map exactly to the BIND 9 version.
 
 
 ### Ubuntu Linux
