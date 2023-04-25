@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "39290a38419736d6",
+        "id": "66914ad18faad730",
         "type": "tabs",
         "children": [
           {
-            "id": "266b325658bc1fd1",
+            "id": "3e8cc13bcea70769",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cheat-sheets-main/markdown.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cheat-sheets-main/markdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cheat-sheets-main/markdown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,13 +118,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "cheat-sheets-main/markdown.md"
-              }
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -148,35 +140,39 @@
       "obsidian-metatable:Metatable": false
     }
   },
-  "active": "266b325658bc1fd1",
+  "active": "e5ed386da207ba28",
   "lastOpenFiles": [
+    "cheat-sheets-main/git.md",
+    "cheat-sheets-main/markdown.md",
+    "python/socket.md",
     "Practice Canvas.canvas",
-    "linux/grep regular expression.md",
-    "linux/data/grep cheatsheet.png",
-    "linux/data/grep cheatsheet.png.crdownload",
-    "linux/data/Assignment GREP Regular Expression.pdf",
-    "linux/data/Sample-1.txt",
-    "linux/data/Sample-2.txt",
-    "linux/data/LA_LabAssignment-2.pdf",
-    "linux/data",
-    "linux/New folder",
-    "linux/grep.md",
+    "cheat-sheets-main/data/git-ultimate-guide.pdf",
     "linux/bash globbing.md",
+    "cheat-sheets-main/data",
+    "linux/data/git-ultimate-guide.pdf",
+    "linux/data/git-ultimate-guide.pdf.crdownload",
+    "linux/data/vim-commands-cheat-sheet-by-pnap.pdf",
+    "linux/data/vim-commands-cheat-sheet-by-pnap.pdf.crdownload",
+    "python",
+    "linux/linuxbasics.md",
+    "linux/cron.md",
+    "references/Reverse Shell.md",
+    "linux/data/Assignment GREP Regular Expression.pdf",
+    "linux/data/grep cheatsheet.png",
+    "cheat-sheets-main/kali-linux.md",
+    "linux/grep regular expression.md",
+    "linux/data/grep cheatsheet.png.crdownload",
+    "linux/data/Sample-1.txt",
+    "linux/grep.md",
     "Untitled 1.md",
     "linux/distros/fedora.md",
     "cheat-sheets-main/mark.md",
-    "cheat-sheets-main/markdown.md",
     "2023-04-24.md",
     "Untitled 2.canvas",
     "linux/awk.md",
-    "linux/linuxbasics.md",
     "linux/distros/centos.md",
     "Untitled 1.canvas",
     "linux/sed.md",
-    "linux/CUT/unicode.yml",
-    "linux/CUT/fruits2.txt",
-    "linux/CUT/fruits1.txt",
-    "linux/cron.md",
     "linux/mount.md",
     "linux/nfs.md",
     "linux/ufw.md",
@@ -184,10 +180,6 @@
     "linux/linux.md",
     "linux/iptables.md",
     "linux/environment-variables-in-linux.md",
-    "linux/distros/ubuntu.md",
-    "linux/distros/debian.md",
-    "cheat-sheets-main/kali-linux.md",
-    "cheat-sheets-main/tools/vscode.md",
-    "cheat-sheets-main/tools/starship.md"
+    "linux/distros/ubuntu.md"
   ]
 }

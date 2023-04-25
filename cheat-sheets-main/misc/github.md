@@ -1,6 +1,6 @@
 # GitHub
 
-GitHub is an Internet hosting service for software development and version control using Git ([[git]]), plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.
+GitHub is an Internet hosting service for software development and version control using Git ([[cheat-sheets-main/tools/git]]), plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.
 
 ---
 ## GitHub Actions
