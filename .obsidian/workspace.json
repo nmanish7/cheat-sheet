@@ -8,11 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3e8cc13bcea70769",
+            "id": "884e074469cfbfd7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "linux/ps.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "712b19426b82d792",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/grep regular expression.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5bee8906e22f88ad",
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "linux/ps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +115,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "linksCollapsed": false,
+                "file": "linux/ps.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -118,11 +137,21 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "linux/ps.md"
+              }
+            }
+          },
+          {
+            "id": "4eed2ef6257b1f94",
+            "type": "leaf",
+            "state": {
+              "type": "metatable-sidebar-view",
               "state": {}
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -140,8 +169,13 @@
       "obsidian-metatable:Metatable": false
     }
   },
-  "active": "e5ed386da207ba28",
+  "active": "884e074469cfbfd7",
   "lastOpenFiles": [
+    "linux/grep regular expression.md",
+    "linux/ps.md",
+    "linux/grep.md",
+    "linux/data/grep cheatsheet.png",
+    "linux/data/Assignment GREP Regular Expression.pdf",
     "cheat-sheets-main/git.md",
     "cheat-sheets-main/markdown.md",
     "python/socket.md",
@@ -157,13 +191,9 @@
     "linux/linuxbasics.md",
     "linux/cron.md",
     "references/Reverse Shell.md",
-    "linux/data/Assignment GREP Regular Expression.pdf",
-    "linux/data/grep cheatsheet.png",
     "cheat-sheets-main/kali-linux.md",
-    "linux/grep regular expression.md",
     "linux/data/grep cheatsheet.png.crdownload",
     "linux/data/Sample-1.txt",
-    "linux/grep.md",
     "Untitled 1.md",
     "linux/distros/fedora.md",
     "cheat-sheets-main/mark.md",
@@ -179,7 +209,6 @@
     "linux/user.md",
     "linux/linux.md",
     "linux/iptables.md",
-    "linux/environment-variables-in-linux.md",
-    "linux/distros/ubuntu.md"
+    "linux/environment-variables-in-linux.md"
   ]
 }
