@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "66914ad18faad730",
+        "id": "19d78d48e00d4b38",
         "type": "tabs",
         "children": [
           {
-            "id": "884e074469cfbfd7",
+            "id": "1926c9fefbca3869",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/ps.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "712b19426b82d792",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/grep regular expression.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -81,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "5bee8906e22f88ad",
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/ps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/ps.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "linux/ps.md"
-              }
+              "state": {}
             }
           },
           {
@@ -149,14 +128,21 @@
               "type": "metatable-sidebar-view",
               "state": {}
             }
+          },
+          {
+            "id": "ea318e0fb62b66b5",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,13 +152,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-metatable:Metatable": false
+      "obsidian-metatable:Metatable": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "884e074469cfbfd7",
+  "active": "e5ed386da207ba28",
   "lastOpenFiles": [
-    "linux/grep regular expression.md",
+    "linux/awk.md",
     "linux/ps.md",
+    "linux/grep regular expression.md",
+    "table test.md",
+    "references/Reverse Shell.md",
     "linux/grep.md",
     "linux/data/grep cheatsheet.png",
     "linux/data/Assignment GREP Regular Expression.pdf",
@@ -190,7 +180,6 @@
     "python",
     "linux/linuxbasics.md",
     "linux/cron.md",
-    "references/Reverse Shell.md",
     "cheat-sheets-main/kali-linux.md",
     "linux/data/grep cheatsheet.png.crdownload",
     "linux/data/Sample-1.txt",
@@ -199,7 +188,6 @@
     "cheat-sheets-main/mark.md",
     "2023-04-24.md",
     "Untitled 2.canvas",
-    "linux/awk.md",
     "linux/distros/centos.md",
     "Untitled 1.canvas",
     "linux/sed.md",
