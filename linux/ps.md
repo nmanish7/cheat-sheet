@@ -87,21 +87,35 @@
 
 | Option | Description                                                                                                                                                   |
 |:------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   -a   | Select all processes except both session leaders and process not associated with a terminal.                                                                  |
-|   -e   | Select all processes, identical to -A                                                                                                                         |
-|   -o   | User-defined format. It is a single argument in the form of blank-separated or comma-separated list. Identical to o.                                                          |
-|   -O   | Like -o, but preloaded with some default columns.                                                                                                                                                              |
-|   -C   | Select by command name. This selects the processes whose executable name is given in cmdlist.                                                                 |
-|   -f   | Do full-format listing. This option can be combined with many other UNIX-style options to add additional columns.                                             |
-|   -F   | extra full format                                                                                                                                             |
-|   -g   | Select by session leader OR by effective group name.                                                                                                          |
-|   -G   | Select by real group ID (RGID) or name. Real group ID means primary Group ID of the user.                                                                     |
-|   -p   | Select by process ID                                                                                                                                          |
-|   -s   | Select by session ID                                                                                                                                          |
-|   -t   | Select by terminal                                                                                                                                            |
-|   -u   | User-oriented format. Select by effective user ID (EUID) or name. Effective user ID describes the user whose file access permissions are used by the process. |
-|   -U   | Select by Real user ID (RUID) or name. Real user ID identifies ther user who created the process.                                                             |
-|   -L   | show threads, possibly with LWP (Light Weight Process ID) (thread ID) and NLWP (Number of Lightweight Processes) (number of threads) columns                                                                              |
+| -a | Select all processes except both session leaders and processes not associated with a terminal.
+| -A | Select all processes.  Identical to -e. |
+| -e | Select all processes.  Identical to -A. |
+| -d | Select all processes except session leaders. |
+| -o \<format> | User-defined format.  format is a single argument in the form of a blank-separated or comma-separated list. Headers may be renamed (ps -o pid,ruser=RealUser -o comm=Command) as desired.  If all column headers are empty (ps -o pid= -o comm=) then the header line will not be output.  Column width will increase as needed for wide headers; this may be used to widen up columns such as WCHAN (ps -o pid,wchan=WIDE-WCHAN-COLUMN -o comm).  Explicit width control (ps opid, wchan:42=column_name_if_required,cmd) is offered too. Use multiple -o options when in doubt. PS_FORMAT environment variable can be used to set default. Identical to o. |
+| -O \<format> | Like -o, but preloaded with some default columns.  Identical to -o pid,format,state,tname,time,command.
+| -C \<cmdlist> | Select by command name.  This selects the processes whose executable name is given in cmdlist. |
+| -f | Do full-format listing.  This option can be combined with many other UNIX-style options to add additional columns.  It also causes the command arguments to be printed.  When used with -L, the NLWP (number of threads) and LWP (thread ID) columns will be added. |
+| -F | Extra full format. | 
+| -g \<grplist> | Select by session OR by effective group name. |
+| -G \<grplist> | Select by real group ID (RGID) or name. The real group ID identifies the group of the user who created the process. Real group ID means primary Group ID of the user.|
+| -p \<pidlist> | Select by Process ID. Identical to p and --pid. |
+| -s \<sessionlist> | Select by session ID.  This selects the processes with a session ID specified in sesslist. |
+| -t \<ttylist> | Select by Teletypewriter(tty)[terminal]. |
+| -u \<userlist> | Select by effective user ID (EUID) or name. Effective user ID describes the user whose file access permissions are used by the process.|
+| -U \<userlist> | Select by real user ID (RUID) or name. Real user ID identifies ther user who created the process. | 
+| -N | Select all processes except those that fulfill the specified conditions (negates the selection). |
+| -q \<pidlist> | Select by PID (quick mode).  This selects the processes whose process ID numbers appear in pidlist. With this option ps reads the necessary info only for the pids listed in the pidlist and doesn't apply additional filtering rules.  The order of pids is unsorted and preserved.  No additional selection options, sorting and forest type listings are allowed in this mode.  Identical to q and --quick-pid. |
+| -c | Show different scheduler information for the -l option. |
+| -j | Jobs format. |
+| -l | Long format.  The -y option is often useful with this. |
+| -y | Do not show flags; show rss in place of addr.  This option can only be used with -l. |
+| -M | Add a column of security data.  Identical to Z (for SELinux). |
+| -H | Show process hierarchy (forest). |
+| -w | Wide output.  Use this option twice for unlimited width.|
+| -L | Show threads, possibly with LWP (thread ID:Light Weight Process ID) and NLWP  (number of threads:Number of Lightweight Processes) columns. |
+| -m | Show threads after processes. |
+| -T | Show threads, possibly with SPID column. |
+
 
 - **Example Command**
 	```shell
@@ -134,36 +148,36 @@
 #### BSD Options
 - BSD options do not require a dash and are used on BSD-based systems such as macOS.
 
-| Option | Description                                                                                                                                                                                                         |
-|:------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   a    | display all the processes on the system, including those not associated with a terminal of current user. If you want to see all the process for all users, you can use aux or ax.                                   |
-|   u    | Display user-oriented format.                                                                                                                                                                                       |
-|   x    | list all processes owned by you or to list all processes when used together with the a option.                                                                                                                      |
-|   p    | Select by process ID.  Identical to -p and --pid.                                                                                                                                                                   |
-|   q    | Select by process ID (quick mode).  Identical to -q and --quick-pid.                                                                                                                                                |
-|   t    | Select by tty.  Nearly identical to -t and --tty, but can also be used with an empty ttylist to indicate the terminal associated with ps.  Using the T option is considered cleaner  using t with an empty ttylist. |
-|   T    | Select all processes associated with this terminal.  Identical to the t option without any argument.                                                                                                                |
-|   r    | Restrict the selection to only running processes.                                                                                                                                                                   |
-|   U    | Select by effective user ID (EUID) or name. Identical to -u and --user.                                                                                                                                             |
-|   o    | Specify user-defined format.  Identical to -o and --format.                                                                                                                                                         |
-|   O    | format is preloaded o (overloaded).  The BSD O option can act like -O (user-defined output format with some common fields predefined) or can be used to specify sort order.                                         |
-|   c    | Show the true command name.                                                                                                                                                                                         |
-|   l    | Display BSD long format.                                                                                                                                                                                            |
-|   s    | Display signal format.                                                                                                                                                                                              |
-|   v    | Display virtual memory format.                                                                                                                                                                                      |
-|   X    | Register format.                                                                                                                                                                                                    |
-|   Z    | Add a column of security data.  Identical to -M (for SELinux).                                                                                                                                                      |
-|   e    | Show the environment after the command.                                                                                                                                                                             |
-|   f    | ASCII art process hierarchy (forest).                                                                                                                                                                               |
-|   h    | No header.  (or, one header per screen in the BSD personality).                                                                                                                                                     |
-|   k    | Specify sorting order.  Sorting syntax is [\+\|-]key[,\[\+\|-]key[\,...]]. Identical to --sort.                                                                                                                     |
-|   n    | Numeric output for WCHAN and USER (including all types of UID and GID).                                                                                                                                             |
-|   w    | Wide output.  Use this option twice for unlimited width.                                                                                                                                                            |
-|   j    | BSD job control format.                                                                                                                                                                                             |
-|   H    | Show threads as if they were processes.                                                                                                                                                                             |
-|   m    | Show threads after processes.                                                                                                                                                                                       |
-|   L    | List all format specifiers.                                                                                                                                                                                         |
-|   V    | Print the procps-ng version.                                                                                                                                                                                        |                                                                                                                                                                                                                   |
+|      Option       | Description                                                                                                                                                                                                         |
+|:-----------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|         a         | display all the processes on the system, including those not associated with a terminal of current user. If you want to see all the process for all users, you can use aux or ax.                                   |
+|    o \<format>    | Specify user-defined format.  Identical to -o and --format.                                                                                                                                                         |
+|    O \<format>    | format is preloaded o (overloaded).  The BSD O option can act like -O (user-defined output format with some common fields predefined) or can be used to specify sort order.                                         |
+|         c         | Show the true command name.                                                                                                                                                                                         |
+|         x         | list all processes owned by you or to list all processes when used together with the a option.                                                                                                                      |
+|         r         | Restrict the selection to only running processes.                                                                                                                                                                   |
+|   p \<pidlist>    | Select by process ID.  Identical to -p and --pid.                                                                                                                                                                   |
+|   q \<pidlist>    | Select by process ID (quick mode).  Identical to -q and --quick-pid.                                                                                                                                                |
+|   t \<ttylist>    | Select by tty.  Nearly identical to -t and --tty, but can also be used with an empty ttylist to indicate the terminal associated with ps.  Using the T option is considered cleaner  using t with an empty ttylist. |
+|         T         | Select all processes associated with this terminal.  Identical to the t option without any argument.                                                                                                                |
+|   U \<userlist>   | Select by effective user ID (EUID) or name. Identical to -u and --user.                                                                                                                                             |
+| k \<specfication>           | Specify sorting order.  Sorting syntax is [+ \| -]key,[+ \| -]key[,...]. Identical to --sort.                                                                                                                       |
+|         j         | BSD job control format.                                                                                                                                                                                             |
+|         l         | Display BSD long format.                                                                                                                                                                                            |
+|         s         | Display signal format.                                                                                                                                                                                              |
+|         u         | Display user-oriented format.                                                                                                                                                                                       |
+|         v         | Display virtual memory format.                                                                                                                                                                                      |
+|         X         | Register format.                                                                                                                                                                                                    |
+|         Z         | Add a column of security data.  Identical to -M (for SELinux).                                                                                                                                                      |
+|         e         | Show the environment after the command.                                                                                                                                                                             |
+|         f         | ASCII art process hierarchy (forest).                                                                                                                                                                               |
+|         h         | No header.  (or, one header per screen in the BSD personality).                                                                                                                                                     |
+|         n         | Numeric output for WCHAN and USER (including all types of UID and GID).                                                                                                                                             |
+|         w         | Wide output.  Use this option twice for unlimited width.                                                                                                                                                            |
+|         H         | Show threads as if they were processes.                                                                                                                                                                             |
+|         m         | Show threads after processes.                                                                                                                                                                                       |
+|         L         | List all format specifiers.                                                                                                                                                                                         |
+|         V         | Print the procps-ng version.                                                                                                                                                                                        |
 - **Example Command**
 	```shell
 	
@@ -174,17 +188,34 @@
 #### GNU Options
 - GNU options are preceded by two dashes (`--`) and are used on GNU/Linux systems.
 
-|    Option    | Description                                                                  | Category                       |
-|:------------:| ---------------------------------------------------------------------------- | ------------------------------ |
-|    --sort    | specify the key to sort by                                                   | Process Sorting Options        |
-|    --user    | select by effective user ID (EUDI) or name. Identical to -u and U.           | Process Selection Options      |
-|    --ppid    | select by parent process ID. This select the process with parent process ID. | Process Selection Options      |
-|    --pid     | select by process ID                                                         | Process Selection Options      |
-|   --format   | user-defined format. Identical to -o and o.                                  | Process Display Format Options |
-|    --cols    | set screen width                                                             | Process Display Format Options |
-| --no-headers | do not print column header line                                              | Additional Options             |
-|  --headers   | display column headers means repeat header lines, one per page of output.    | Additional Options             |
-|   --forest   | show ASCII art process hierarchy as a tree                                   | Additional Options             |
+| Option                  | Description                                                                                                                                                                              |
+|:----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --deselect              | Select all processes except those that fulfill the specified conditions (negates the selection). Identical to -N.                                                                        |
+| --Group \<grplist>      | Select by real group ID (RGID) or name.  Identical to -G.                                                                                                                                |
+| --group \<grplist>      | Select by effective group ID (EGID) or name.  The -g option is often an alternative to --group.                                                                                          |
+| --pid \<pidlist>        | Select by process ID.  Identical to -p and p.                                                                                                                                            |
+| --ppid \<pidlist>       | Select by parent process ID.  This selects the processes with a parent process ID in pidlist.  That is,               it selects processes that are children of those listed in pidlist. |
+| --quick-pid \<pidlist>  | Select by process ID (quick mode).  Identical to -q and q.                                                                                                                               |
+| --sid \<sessionlist>    | Select by session ID.  Identical to -s.                                                                                                                                                  |
+| --tty \<ttylist>        | Select by terminal.  Identical to -t and t.                                                                                                                                              |
+| --User \<userlist>      | Select by real user ID (RUID) or name.  Identical to -U.                                                                                                                                 |
+| --user \<userlist>      | Select by effective user ID (EUID) or name.  Identical to -u and U.                                                                                                                      |
+| --context               | Display security context format (for SELinux).                                                                                                                                           |
+| --format \<format>      | user-defined format.  Identical to -o and o.                                                                                                                                             |
+| --cols \<n>             | Set screen width.                                                                                                                                                                        |
+| --columns \<n>          | Set screen width.                                                                                                                                                                        |
+| --cumulative            | Include some dead child process data (as a sum with the parent).                                                                                                                         |
+| --forest                | ASCII art process tree.                                                                                                                                                                  |
+| --headers               | Repeat header lines, one per page of output.                                                                                                                                             |
+| --lines \<n>            | Set screen height.                                                                                                                                                                       |
+| --no-headers            | Print no header line at all.  --no-heading is an alias for this option.                                                                                                                  |
+| --rows \<n>             | Set screen height.                                                                                                                                                                       |
+| --sort \<specification> | Specify sorting order.  Sorting syntax is [+ \| -]key,[+ \| -]key[,...].  Identical to k.  For example: ps jax --sort=uid,-ppid,+pid                                                     |
+| --width \<n>            | Set screen width.                                                                                                                                                                        |
+| --help \<section>       | Print a help message.  The section argument can be one of simple, list, output, threads, misc, or all.                                                                                   |
+| --info                  | Print debugging info.                                                                                                                                                                    |
+| --version               | Print the procps-ng version.                                                                                                                                                             |
+
 
 ---
 ### Process State

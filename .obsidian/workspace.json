@@ -11,8 +11,12 @@
             "id": "1926c9fefbca3869",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "linux/ps.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5bee8906e22f88ad",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "linux/ps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "linux/ps.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "linux/ps.md"
+              }
             }
           },
           {
@@ -156,8 +165,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e5ed386da207ba28",
+  "active": "1926c9fefbca3869",
   "lastOpenFiles": [
+    "cheat-sheets-main/git.md",
     "linux/awk.md",
     "linux/ps.md",
     "linux/grep regular expression.md",
@@ -166,7 +176,6 @@
     "linux/grep.md",
     "linux/data/grep cheatsheet.png",
     "linux/data/Assignment GREP Regular Expression.pdf",
-    "cheat-sheets-main/git.md",
     "cheat-sheets-main/markdown.md",
     "python/socket.md",
     "Practice Canvas.canvas",
