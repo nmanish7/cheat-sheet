@@ -4,47 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "19d78d48e00d4b38",
+        "id": "496d544ac3bba261",
         "type": "tabs",
         "children": [
           {
-            "id": "91da3d9bc3fb211e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ELK/Elastic/1-basic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "618fbc5df89babe7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ELK/Elastic/2-REST API.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c85aefc6be60c36d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ELK/Elastic/2-REST API.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f4a4792f4fc640f8",
+            "id": "d88d2a6553162baf",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -100,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "5b607fc71a13cf33",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -122,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ELK/Elastic/1-basic.md",
+                "file": "ELK/Elastic/3-docker-elk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ELK/Elastic/1-basic.md",
+                "file": "ELK/Elastic/3-docker-elk.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ELK/Elastic/1-basic.md"
+                "file": "ELK/Elastic/3-docker-elk.md"
               }
             }
           },
@@ -202,13 +174,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "91da3d9bc3fb211e",
+  "active": "d88d2a6553162baf",
   "lastOpenFiles": [
+    "ELK/Elastic/elk-docker-compose/env.env",
+    "env.md",
     "ELK/Elastic/3-docker-elk.md",
+    "elk-docker-compose/elasticsearch-docker.yaml.md",
+    "elk-docker-compose",
+    "ELK/Elastic/1-basic.md",
+    "python/socket.md",
+    "README.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
     "Untitled.md",
     "ELK/Elastic/2-REST API.md",
+    "ELK/Elastic/elk-docker-compose/Untitled.md",
+    "ELK/Elastic/elk-docker-compose/kibana-docker.yml",
+    "ELK/Elastic/elk-docker-compose/elasticsearch-docker.yml",
+    "ELK/Elastic/elk-docker-compose",
+    "Untitled",
     "ELK/Elastic/extra.md",
-    "ELK/Elastic/1-basic.md",
     "linux/sed.md",
     "linux/ps.md",
     "ELK/Elastic",
@@ -222,27 +207,14 @@
     "linux/data/grep cheatsheet.png",
     "linux/data/Assignment GREP Regular Expression.pdf",
     "cheat-sheets-main/markdown.md",
-    "python/socket.md",
     "Practice Canvas.canvas",
     "cheat-sheets-main/data/git-ultimate-guide.pdf",
     "linux/bash globbing.md",
     "cheat-sheets-main/data",
-    "linux/data/git-ultimate-guide.pdf",
-    "linux/data/git-ultimate-guide.pdf.crdownload",
-    "linux/data/vim-commands-cheat-sheet-by-pnap.pdf",
-    "linux/data/vim-commands-cheat-sheet-by-pnap.pdf.crdownload",
-    "python",
     "linux/linuxbasics.md",
     "linux/cron.md",
     "cheat-sheets-main/kali-linux.md",
-    "Untitled 1.md",
-    "linux/distros/fedora.md",
-    "cheat-sheets-main/mark.md",
-    "2023-04-24.md",
     "Untitled 2.canvas",
-    "linux/distros/centos.md",
-    "Untitled 1.canvas",
-    "linux/mount.md",
-    "linux/nfs.md"
+    "Untitled 1.canvas"
   ]
 }
