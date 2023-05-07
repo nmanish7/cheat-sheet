@@ -8,13 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1926c9fefbca3869",
+            "id": "91da3d9bc3fb211e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/ps.md",
+                "file": "ELK/Elastic/1-basic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "618fbc5df89babe7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ELK/Elastic/2-REST API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c85aefc6be60c36d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ELK/Elastic/2-REST API.md",
                 "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f4a4792f4fc640f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ELK/Elastic/3-docker-elk.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -86,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/ps.md",
+                "file": "ELK/Elastic/1-basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/ps.md",
+                "file": "ELK/Elastic/1-basic.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/ps.md"
+                "file": "ELK/Elastic/1-basic.md"
               }
             }
           },
@@ -151,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,11 +202,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1926c9fefbca3869",
+  "active": "91da3d9bc3fb211e",
   "lastOpenFiles": [
+    "ELK/Elastic/3-docker-elk.md",
+    "Untitled.md",
+    "ELK/Elastic/2-REST API.md",
+    "ELK/Elastic/extra.md",
+    "ELK/Elastic/1-basic.md",
+    "linux/sed.md",
+    "linux/ps.md",
+    "ELK/Elastic",
+    "ELK",
     "cheat-sheets-main/git.md",
     "linux/awk.md",
-    "linux/ps.md",
     "linux/grep regular expression.md",
     "table test.md",
     "references/Reverse Shell.md",
@@ -190,8 +235,6 @@
     "linux/linuxbasics.md",
     "linux/cron.md",
     "cheat-sheets-main/kali-linux.md",
-    "linux/data/grep cheatsheet.png.crdownload",
-    "linux/data/Sample-1.txt",
     "Untitled 1.md",
     "linux/distros/fedora.md",
     "cheat-sheets-main/mark.md",
@@ -199,13 +242,7 @@
     "Untitled 2.canvas",
     "linux/distros/centos.md",
     "Untitled 1.canvas",
-    "linux/sed.md",
     "linux/mount.md",
-    "linux/nfs.md",
-    "linux/ufw.md",
-    "linux/user.md",
-    "linux/linux.md",
-    "linux/iptables.md",
-    "linux/environment-variables-in-linux.md"
+    "linux/nfs.md"
   ]
 }
